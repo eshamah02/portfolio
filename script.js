@@ -15,8 +15,13 @@ function type(callback) {
 }
 
 function showRemainingContent() {
-    const notTypewriter = document.getElementById("not-typewriter");
-    notTypewriter.style.display = "block";
+    const fadeElements = document.querySelectorAll(".fade-in");
+    
+    // Add the "visible" class to each fade-in element
+    fadeElements.forEach(function(element) {
+        element.classList.add("visible");
+    });
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {

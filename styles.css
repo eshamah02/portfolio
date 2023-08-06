@@ -19,10 +19,18 @@ body {
 }
 
 .not-typewriter {
-    display: none;
     text-align: center;
     margin: 20px;
     margin-bottom: 150px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
 }
 
 button {
@@ -44,3 +52,4 @@ button {
 button:hover {
     transform: translateY(-2px);
 }
+
