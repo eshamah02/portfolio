@@ -4,6 +4,8 @@ body {
     height: 100vh;
     margin: 0;
     font-family: monospace;
+    background-color: #dad4d4;
+    
 }
 
 .typewriter-container {
@@ -13,11 +15,11 @@ body {
 .typewriter {
     padding: 20px;
     display: inline-block;
-    margin: 50px;
+    margin: 20px;
 }
 
 .not-typewriter {
     display: none;
     text-align: center;
-    margin-top: 50px;
+    margin: 20px;
 }
