@@ -1,0 +1,23 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: monospace;
+}
+
+.typewriter-container {
+    text-align: center;
+}
+
+.typewriter {
+    padding: 20px;
+    display: inline-block;
+    margin: 50px;
+}
+
+.not-typewriter {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
