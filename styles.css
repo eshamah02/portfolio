@@ -48,6 +48,9 @@ a {
     box-shadow: 0 0 0 3px #424040 inset;
     font-family: monospace;
     text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 a:hover {
@@ -63,6 +66,12 @@ a:hover {
 }
 
 .projects {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.links {
     justify-content: center;
     align-items: center;
     text-align: center;

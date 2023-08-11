@@ -12,15 +12,35 @@
 
     <h1 class="title">projects</h1>
 
+    <p class="note">code for some projects is not publicly available due to non-disclosures and honor code but can be made available upon request</p>
+
     <div class="projects">
         <div class="project">
             <a href="index.html">
-                <p>a3: aggregating aws (infrastructure) attributes</p>
-                <p>i developed an end-to-end generation and serving procedure to aggregate and display aws infrastructure attributes to deploy centralized units. 
+                <p class="project-title">a3: aggregating aws (infrastructure) attributes</p>
+                <p class="project-desc">i developed an end-to-end generation and serving procedure to aggregate and display aws infrastructure attributes to deploy centralized units. 
                    i used Lambda functions and Step Functions to aggregate data from DynamoDB tables, EC2 instances, and VPCs to fill up an aurora serverless database.
                    i implemented dynamic updates for the aurora database by using DynamoDB streams and triggers.
                    i hosted a REST API on Flask and API Gateway to deliver a user-friendly and dynamic front-end experience with authentication.
                 </p>
+                <p class="project-stack">tech stack: AWS Cloud services (Lambda, Step Functions, DynamoDB, EC2, VPC, RDS, IAM, etc.), Python, Flask</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="index.html">
+                <p class="project-title">chess AI</p>
+                <p class="project-desc">iteratively developed a chess AI program. started with minimax alpha beta pruning and a simple heuristic using FEN representation. 
+                    then, created and trained a simple deep neural network model using TensorFlow using ReLu activation and sigmoid activation.
+                </p>
+                <p class="project-stack">tech stack: Python, TensorFlow ML library</p>
+            </a>
+        </div>
+        <div class="project">
+            <a href="index.html">
+                <p class="project-title">Pacman AI</p>
+                <p class="project-desc">implemented a basic active reinforcement learning agent to perform Q-Learning and SARSA to win a generalized version of Pacman.
+                </p>
+                <p class="project-stack">tech stack: Python, TensorFlow ML library</p>
             </a>
         </div>
     </div>
