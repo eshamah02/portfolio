@@ -57,7 +57,8 @@ a {
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.5)
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
 }
 
 a:hover {
@@ -85,20 +86,37 @@ a:hover {
 }
 
 .about-me {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
+    row-gap: 50px;
 }
 
 .about-me-desc {
-    flex: 0.7;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
 }
 
 .about-me-img {
-    flex: 0.3;
+    grid-column: 4 / span -1;
+    grid-row: 1 / span 2;
 }
 
-.about-me-ps {
-    flex: 0.35;
+.about-me-programming-scripting {
+    grid-column: 1 / span 2;
+}
+
+.about-me-framework-tools {
+    grid-column: 3 / span 2;
+}
+
+.about-me-relevant-coursework {
+    grid-column: 1 / span 4;
+}
+
+.about-me-links {
+    grid-column: 1 / span 2;
+    display: flex;
 }
 
 .project-title {
