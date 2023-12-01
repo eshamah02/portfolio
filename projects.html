@@ -5,87 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>esha maheshwari</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1 class="title">projects</h1>
+    <nav>
+        <a href="projects.html">projects</a>
+        <a href="resume.html">resume</a>
+        <a href="me.html">about me</a>
+    </nav>
 
-    <p class="note">code for some projects is not publicly available due to non-disclosures and honor code but can be made available upon request</p>
+    <div class="title">
+        <h1>projects</h1>
+    </div>
+
+    <p></p>
+
+    <!-- <p class="note">code for some projects is not publicly available due to non-disclosures and honor code but can be made available upon request</p> -->
 
     <div class="projects">
         <div class="project">
-            <a href="index.html">
-                <p class="project-title">A3: Aggregating AWS (Infrastructure) Attributes</p>
-                <p class="project-desc">I developed an end-to-end generation and serving procedure to aggregate and display AWS infrastructure attributes to deploy centralized units. 
-                   I used Lambda functions and Step Functions to aggregate data from DynamoDB tables, EC2 instances, and VPCs to fill up an Aurora Serverless database.
-                   I implemented dynamic updates for the Aurora database by using DynamoDB streams and trigger functionality.
-                   I hosted a REST API on API Gateway using Flask to deliver a user-friendly and dynamic front-end experience with user authentication.
-                </p>
-                <div class="project-stack">
-                    <p class="tech">AWS</p>
-                    <p class="tech">AWS: Lambda</p>
-                    <p class="tech">AWS: Step Functions</p>
-                    <p class="tech">AWS: DynamoDB</p>
-                    <p class="tech">AWS: EC2</p>
-                    <p class="tech">AWS: RDS</p>
-                    <p class="tech">Python</p>
-                    <p class="tech">Flask</p>
-                    <p class="tech">SQL</p>
-                    <p class="tech">JavaScript</p>
-                    <p class="tech">HTML</p>
-                    <p class="tech">CSS</p>
-                </div>
-            </a>
+            <p class="project-title">A3: Aggregating AWS (Infrastructure) Attributes</p>
+            <p class="project-desc">I developed an end-to-end generation and serving procedure to aggregate and display AWS infrastructure attributes to deploy centralized units. 
+                I used Lambda functions and Step Functions to aggregate data from DynamoDB tables, EC2 instances, and VPCs to fill up an Aurora Serverless database.
+                I implemented dynamic updates for the Aurora database by using DynamoDB streams and trigger functionality.
+                I hosted a REST API on API Gateway using Flask to deliver a user-friendly and dynamic front-end experience with user authentication.
+            </p>
+            <img class="project-img" src="static/pastel-clouds.gif">
+            <div class="project-stack">
+                <p class="tech">AWS</p>
+                <p class="tech">Python</p>
+                <p class="tech">Flask</p>
+                <p class="tech">SQL</p>
+                <p class="tech">JavaScript</p>
+                <p class="tech">HTML</p>
+                <p class="tech">CSS</p>
+            </div>
+            <button class="project-button">see more <span class="project-button-arrow">></span></button>
         </div>
         <div class="project">
-            <a href="index.html">
-                <p class="project-title">Piazza Classifier</p>
-                <p class="project-desc">I developed a program that uses natural language processing and supervised machine learning techniques
-                    to automatically identify the subject of posts from class Piazza forums. I trained the program using a training set, developed a simplified
-                    version of a Multivariate Bernoulli Naive Bayes Classifier, and tested my program using a validation set, to successfully classify new 
-                    Piazza posts.
-                </p>
-                <div class="project-stack">
-                    <p class="tech">C++</p>
-                </div>
-            </a>        
+            <p class="project-title">Piazza Classifier</p>
+            <p class="project-desc">I developed a program that uses natural language processing and supervised machine learning techniques
+                to automatically identify the subject of posts from class Piazza forums. I trained the program using a training set, developed a simplified
+                version of a Multivariate Bernoulli Naive Bayes Classifier, and tested my program using a validation set, to successfully classify new 
+                Piazza posts.
+            </p>
+            <img class="project-img" src="static/pastel-clouds.gif">
+            <div class="project-stack">
+                <p class="tech">C++</p>
+            </div>
+            <button class="project-button">see more <span class="project-button-arrow">></span></button>
         </div>
         <div class="project">
-            <a href="index.html">
-                <p class="project-title">Chess AI</p>
-                <p class="project-desc">I iteratively developed a chess AI program. I started with Minimax Alpha Beta pruning and a simple heuristic using FEN representation. 
-                    Then, I created and trained a simple deep neural network model using TensorFlow using ReLU activation and sigmoid activation.
-                </p>
-                <div class="project-stack">
-                    <p class="tech">Python</p>
-                    <p class="tech">Python: TensorFlow ML</p>
-                </div>
-            </a>
+            <p class="project-title">Chess AI</p>
+            <p class="project-desc">I iteratively developed a chess AI program. I started with Minimax Alpha Beta pruning and a simple heuristic using FEN representation. 
+                Then, I created and trained a simple deep neural network model using TensorFlow using ReLU activation and sigmoid activation.
+            </p>
+            <img class="project-img" src="static/pastel-clouds.gif">
+            <div class="project-stack">
+                <p class="tech">Python</p>
+                <p class="tech">Python: TensorFlow ML</p>
+            </div>
+            <button class="project-button">see more <span class="project-button-arrow">></span></button>
         </div>
         <div class="project">
-            <a href="index.html">
-                <p class="project-title">Pacman AI</p>
-                <p class="project-desc">I implemented a basic active reinforcement learning agent to perform Q-Learning and SARSA to win a generalized version of Pacman.
-                </p>
-                <div class="project-stack">
-                    <p class="tech">Python</p>
-                    <p class="tech">Python: TensorFlow ML</p>
-                </div>
-            </a>
+            <p class="project-title">Pacman AI</p>
+            <p class="project-desc">I implemented a basic active reinforcement learning agent to perform Q-Learning and SARSA to win a generalized version of Pacman.
+            </p>
+            <img class="project-img" src="static/pastel-clouds.gif">
+            <div class="project-stack">
+                <p class="tech">Python</p>
+                <p class="tech">Python: TensorFlow ML</p>
+            </div>
+            <button class="project-button">see more <span class="project-button-arrow">></span></button>
         </div>
         <div class="project">
-            <a href="https://github.com/eshamah02/portfolio">
-                <p class="project-title">My Portfolio!</p>
-                <p class="project-desc">I developed the website you're on right now! You can click here to be navigated to the GitHub where it's hosted from.
-                </p>
-                <div class="project-stack">
-                    <p class="tech">JavaScript</p>
-                    <p class="tech">HTML</p>
-                    <p class="tech">CSS</p>
-                </div>
-            </a>
+            <p class="project-title">My Portfolio!</p>
+            <p class="project-desc">I developed the website you're on right now! You can click here to be navigated to the GitHub where it's hosted from.
+            </p>
+            <img class="project-img" src="static/pastel-clouds.gif">
+            <div class="project-stack">
+                <p class="tech">JavaScript</p>
+                <p class="tech">HTML</p>
+                <p class="tech">CSS</p>
+            </div>
+            <button class="project-button">see more <span class="project-button-arrow">></span></button>
         </div>
     </div>
 
