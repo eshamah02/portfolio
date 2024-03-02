@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esha maheshwari</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:wght@300;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="sidebar">
+
+            <p class="maintopic"><a href="index.html">ESHA MAHESHWARI</a></p>
+
+            <p class="maintopic">CODING</p>
+            <p class="subtopic"><a href="coloranalysis.html">COLOR ANALYSIS</a></p>
+            <p class="subtopic"><a href="smartdose.html">SMARTDOSE</a></p>
+            <p class="subtopic"><a href="a3.html">A3</a></p>
+            <p class="subtopic"><a href="piazzaclassifier.html">PIAZZA CLASSIFIER</a></p>
+            <p class="subtopic"><a href="chess.html">CHESS</a></p>
+            <p class="subtopic"><a href="pacman.html">PACMAN</a></p>
+            <p class="subtopic"><a href="portfolio.html">PORTFOLIO</a></p>
+
+            <p class="maintopic">DESIGN</p>
+            <p class="subtopic">WEBSITE REVAMP</p>
+
+            <p class="maintopic">RESEARCH</p>
+
+            <p class="maintopic"><a href="about.html">ABOUT</a></p>
+            <p class="maintopic"><a href="mailto:eshamah02@gmail.com?subject=Reaching Out From Portfolio"
+                    target="_blank">CONTACT</a></p>
+            <p class="maintopic"><a href="static/Esha_Maheshwari_Resume.pdf" target="_blank">RESUME</a></p>
+
+
+        </div>
+
+        <div class="main fullspace">
+
+            <div class="column cols2-1">
+
+                <p class="projectinfo">I conducted a color and image analysis of specific artists' works, exploring various
+                    quantifiable aspects of their artistic expressions.</p>
+
+                <p class="projectinfo">I analyzed dominant colors, entropy, and HSV (hue, saturation, value) values in several artworks 
+                    made by influential artists over the last century. Dominant color refers to the color that is most prevalent in the 
+                    piece. I used these colors to further analyze the hue, saturation, and value components. The entropy of a piece refers 
+                    to the complexity contained in a given neighborhood, typically defined by a structuring element. Higher entropy means 
+                    higher randomness present in the work, which can often appear through texture, contrast, or blurriness.</p>
+
+                <p class="projectinfo">I used the <a href="https://www.kaggle.com/datasets/ikarus777/best-artworks-of-all-time">'Best Artworks of All Time'</a> 
+                    dataset. I used a small sample of 860 art pieces from this dataset to account for what my available GPU could handle.</p>
+                
+                <p class="projectinfo" onclick="changeColors(1)">Rembrandt and Michelangelo have the lowest Delta E values ranging from 19.41 to 19.85 
+                    in that order respectively. Andy Warhol and Joan Miro have the highest Delta E values ranging from 51.72 to 49.99 in that
+                    order respectively. Artists with the lowest Delta E values tend to use similar dominant colors within their work. The 
+                    artists with the highest Delta E values tend to use a wider variety of colors within their work. Visually, we can see this
+                    through a display of a subset of the dominant colors for these artists.</p>
+                    
+                <p class="projectinfo" onclick="changeColors(2)">Rembrandt and Gustav Klimt have the lowest entropy values ranging from 6.40 and 6.42 respectively. 
+                    Michelangelo and Diego Rivera have the highest entropy values ranging from 7.63 to 7.62 respectively. Artists with low 
+                    entropy values indicate less prominent strokes, a more blurry effect, or fewer structural elements. Artists with high entropy 
+                    values indicate more defined strokes and more structural elements.</p>
+
+                <p class="projectinfo" onclick="changeColors(3)">Giotto di Bondone and Titian have the lowest hue values ranging from 0.07 to 0.08 respectively. Piet Mondrian and
+                    Salvador Dali have the highest hue values ranging from 0.36 to 0.35 respectively. I did not see a significant result
+                    when comparing hue values, which makes logical sense, because hues only describe the undertone color used, not how
+                    saturated or intense the color is (which is easier to pick up on). Visually, I personally did not see a difference in
+                    artists based on their hue values. That being said, quantitatively, there is some relationship between different
+                    artists and average hues.</p>
+
+                <p class="projectinfo" onclick="changeColors(4)">Alfred Sisley and Claude Monet have the lowest saturation values ranging from 0.14 to 0.17 respectively. Hieronymus
+                    Bosch and Frida Kahlo have the highest saturation values ranging from 0.59 to 0.58 respectively. Visually, this is easy
+                    to see in the dominant colors for the artists, where low saturation artists seemed to have more
+                    grays and more gray-toned dominant colors while high saturation artists seemed to have less grays and less gray-toned
+                    dominant colors.</p>
+
+                <p class="projectinfo" onclick="changeColors(5)">Rembrandt and Eugene Delacrois have the lowest value components ranging from 0.21 to 0.29 respectively. Leonardo da
+                    Vinci and Michelangelo have the highest value components ranging from 0.69 to 0.68 respectively. Low value component
+                    artists have less brightness or intensity in their dominant colors, having lots of black-toned colors present. High
+                    value component artists have more brightness and intensity, without many black-toned colors present. Visually, we can
+                    see darker (closer to black) colors for artists with low value components, and lighter (closer to white) colors for
+                    artists with high value components.</p>
+
+
+            </div>
+
+            <div class="column cols2-2">
+
+                <div id="colorgrids"></div>
+
+                <div class="toprightnote">
+                    <p class="note">click on the paragraphs</p>
+                </div>
+                
+                <div class="bottomrightnote">
+                    <p class="note"><a href="https://github.com/eshamah02/color_analysis" target="_blank">github</a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+
+</html>
