@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esha maheshwari</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:wght@300;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="flex min-h-screen overflow-hidden">
+
+        <!-- Navbar -->
+        <div id="navbar" class=""></div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex md:ml-64">
+
+            <!-- left column scrollable text -->
+            <div class="flex-1 overflow-y-auto text-sm mt-4 p-4">
+
+                <!-- <div class="flex items-center"></div> -->
+                <p class="text-lg mb-4">Piazza Classifier</p>
+                <!-- <a href="https://github.com/naschwei/SmartDose" target="_blank" class="">
+                                        <img src="static/github.png" alt="Github link" class="ml-4 w-7 h-7 mb-4 hover-pop-up">
+                                    </a> -->
+                <!-- </div> -->
+
+                <p class="italic">Code available upon request</p>
+                <p class="italic"><a class="underline decoration-dotted" href="https://eecs280staff.github.io/p5-ml/" target="_blank">Project Spec</a></p>
+
+                <p class="mt-4">I created a program that automatically identified the subject of class Piazza posts using natural language processing
+                    and machine learning techniques.</p>
+
+                <p class="mt-4">I trained the program using a trainng set, developed a simplified version of a Multivariate Bernoulli Naive Bayes Classifier,
+                    and tested my program using a validation set, to successfully classify new Piazza posts.</p>
+
+                <p class="mt-4">Completed as part of a class project.</p>
+
+                
+            </div>
+
+            <!-- right column img section -->
+            <div class="flex-1">
+            
+                <!-- <p class="note">code not available due to liability reasons</p> -->
+            
+            </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('navbar').innerHTML = data;
+
+                        // Now that navbar.html is loaded, add the event listeners
+                        const hamburgerIcon = document.getElementById('hamburgerIcon');
+                        const mobileNav = document.getElementById('mobileNav');
+                        const closeIcon = document.getElementById('closeIcon');
+
+                        if (hamburgerIcon && mobileNav && closeIcon) {
+                            hamburgerIcon.addEventListener('click', () => {
+                                mobileNav.classList.remove('hidden');
+                                hamburgerIcon.classList.add('hidden');
+                                document.body.style.overflow = 'hidden';
+                            });
+
+                            closeIcon.addEventListener('click', () => {
+                                mobileNav.classList.add('hidden');
+                                hamburgerIcon.classList.remove('hidden');
+                                document.body.style.overflow = '';
+                            });
+                        }
+                    });
+            });
+        </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esha maheshwari</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:wght@300;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <style>
+                @keyframes popUp {
+                0% {
+                    transform: scale(1);
+                }
+                100% {
+                    transform: scale(1.1);
+                }
+            }
+
+            .hover-pop-up {
+                transition: transform 0.3s ease;
+            }
+
+            .hover-pop-up:hover {
+                animation: popUp 0.3s forwards;
+            }
+
+            @keyframes scrollImages {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-100%);
+                }
+            }
+        </style>
+</head>
+
+<body>
+
+    <div class="flex min-h-screen overflow-hidden">
+
+        <!-- Navbar -->
+        <div id="navbar" class=""></div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex md:ml-64">
+
+            <!-- left column scrollable text -->
+            <div class="flex-1 overflow-y-auto text-sm mt-4 p-4">
+
+                <div class="flex items-center">
+                    <p class="text-lg mb-4">SmartDose</p>
+                    <a href="https://github.com/naschwei/SmartDose" target="_blank" class="">
+                        <img src="static/github.png" alt="Github link" class="ml-4 w-7 h-7 mb-4 hover-pop-up">
+                    </a>
+                </div>
+
+                <p class="">SmartDose integrates an intuitive mobile app and physical dispenser to aid individuals with cognitive disabilities in
+                medication management. SmartDose includes a 3D printed physical dispenser, equipped with an Arduino microcontroller and 
+                connects to the SmartDose mobile app via HTTP requests. The mobile app allows users to easily add, edit, and delete 
+                medications, as well as log when they've refilled the dispenser. Users are able to keep track of previous, current, 
+                and future medication schedules.</p>
+
+                <p class="mt-4">I made the mock ups on the right using Figma!</p>
+
+                <p class="italic mt-4">Click on the links below to see the hardware in action and more.</p>
+                
+                <div class="mt-2">
+                    <p class="underline decoration-dotted"><a href="static/smartdosevideo.mp4" target="_blank">HARDWARE</a></p>
+                    <p class="underline decoration-dotted"><a href="static/smartdoseumlexpected.png" target="_blank">UML SEQUENCE DIAGRAM FOR EXPECTED USAGE</a></p>
+                    <p class="underline decoration-dotted"><a href="static/smartdoseumlunexpected.png" target="_blank">UML SEQUENCE DIAGRAM FOR UNEXPECTED USAGE</a></p>
+                    <p class="underline decoration-dotted"><a href="static/smartdosestatechart.png" target="_blank">STATECHART DIAGRAM</a></p>
+                </div>
+
+            </div>
+
+            <!-- right column img section -->
+            <div class="flex-1">
+
+                <div class="w-full h-screen overflow-hidden top-0 relative" style="margin-left: calc(33.333% - 20px);">
+                    <div class="w-52 h-100 flex flex-col" style="will-change: transform; animation: scrollImages 100s linear infinite;">
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma1.png" alt="Image 1"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma2.png" alt="Image 2"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma3.png" alt="Image 3"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma4.png" alt="Image 4"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma1.png" alt="Image 1"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma2.png" alt="Image 2"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma3.png" alt="Image 3"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma4.png" alt="Image 4"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma1.png" alt="Image 1"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma2.png" alt="Image 2"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma3.png" alt="Image 3"></a>
+                        <a href="https://www.figma.com/proto/PEcIp4IrCyULLwtDIIMXjZ/smartdose?node-id=0-1&t=76tC53gm8GWGByXb-1" target="_blank"><img class="w-full h-auto" src="static/smartdosefigma4.png" alt="Image 4"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="toprightnote">
+                                <p class="note">Made With Apurva Desai, Michelle Li, Nathan Schweikhart</p>
+            </div> -->
+            
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+
+                    // Now that navbar.html is loaded, add the event listeners
+                    const hamburgerIcon = document.getElementById('hamburgerIcon');
+                    const mobileNav = document.getElementById('mobileNav');
+                    const closeIcon = document.getElementById('closeIcon');
+
+                    if (hamburgerIcon && mobileNav && closeIcon) {
+                        hamburgerIcon.addEventListener('click', () => {
+                            mobileNav.classList.remove('hidden');
+                            hamburgerIcon.classList.add('hidden');
+                            document.body.style.overflow = 'hidden';
+                        });
+
+                        closeIcon.addEventListener('click', () => {
+                            mobileNav.classList.add('hidden');
+                            hamburgerIcon.classList.remove('hidden');
+                            document.body.style.overflow = '';
+                        });
+                    }
+                });
+            });
+    </script>
+
+</body>
+
+
+
+</html>

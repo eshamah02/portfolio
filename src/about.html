@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esha maheshwari</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:wght@300;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @keyframes popUp {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .hover-pop-up {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-pop-up:hover {
+            animation: popUp 0.3s forwards;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex min-h-screen overflow-hidden">
+    
+        <!-- Navbar -->
+        <div id="navbar" class=""></div>
+    
+        <!-- Main Content -->
+        <div class="flex-1 flex md:ml-64">
+    
+            <!-- left column scrollable text -->
+            <div class="flex-1 overflow-y-auto text-sm mt-4 p-4">
+
+                <div class="flex items-center">
+                    <p class="text-lg mb-4">Hi and welcome to my portfolio!</p>
+                    <a href="https://github.com/eshamah02" target="_blank" class="">
+                        <img src="static/github.png" alt="Github link" class="ml-4 w-7 h-7 mb-4 hover-pop-up">
+                    </a>
+                    <a href="https://www.linkedin.com/in/esha-maheshwari" target="_blank" class="">
+                        <img src="static/linkedin.png" alt="Linkedin link" class="ml-2 w-7 h-7 mb-4 hover-pop-up">
+                    </a>
+                </div>
+                
+
+                <p>I'm passionate about using tech to create a better, brighter world. Whether that's through developing apps
+                    that connect communities or using data science to tackle real world problems, I believe in coding with a cause.
+                    I also really enjoy design and making things look good, and always try to incorporate that in my work.</p>
+
+                <p class="mt-4">The following are some of the coursework that I've completed at university:</p>
+                <p class="leading-tight italic">User Interface Development</p>
+                <p class="leading-tight italic">Data Structures and Algorithms</p>
+                <p class="leading-tight italic">Computer Organization</p>
+                <p class="leading-tight italic">Artificial Intelligence</p>
+                <p class="leading-tight italic">Web Systems</p>
+                <p class="leading-tight italic">Needs Assessment and Usability Evaluation</p>
+                <p class="leading-tight italic">Computer Vision</p>
+                <p class="leading-tight italic">Software for Accessibility</p>
+                <p class="leading-tight italic">Computer Science Pragmatics</p>
+                <p class="leading-tight italic">Building Data Driven Applications</p>
+                <p class="leading-tight italic">Applied ML for Modeling Human Behavior</p>
+                
+                <p class="mt-4">The following are some of the certifications and awards I've received:</p>
+                <p class="leading-tight italic"><a class="underline decoration-dotted" href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target="blank">AWS Certified Cloud Practitioner</a></p>
+                <p class="leading-tight italic"><a class="underline decoration-dotted" href="https://www.ibm.com/training/badge/ibm-applied-ai-professional-certificate" target="blank">IBM Applied AI Professional Certificate</a></p>
+                <p class="leading-tight italic"><a class="underline decoration-dotted" href="https://www.udacity.com/course/ai-for-trading--nd880" target="_blank">AI For Trading (in progress)</a></p>
+                <p class="leading-tight italic"><a class="underline decoration-dotted" href="https://www.collegeboxing.org/scholarships" target="blank">Ira Mitzner Memorial Scholarship Recepient</a></p>
+                <p class="leading-tight italic"><a class="underline decoration-dotted" href="https://www.collegeboxing.org/academic-all-american" target="_blank">Academic All-American (2023, 2024)</a></p>
+                <p class="leading-tight italic">James B Angell Scholar (2020-2024)</p>  
+                <p class="leading-tight italic">Dean's List (2020-2024)</p>         
+
+            </div>
+
+            <!-- right column img section -->
+            <div class="flex-1">
+            
+            
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+
+                    // Now that navbar.html is loaded, add the event listeners
+                    const hamburgerIcon = document.getElementById('hamburgerIcon');
+                    const mobileNav = document.getElementById('mobileNav');
+                    const closeIcon = document.getElementById('closeIcon');
+
+                    if (hamburgerIcon && mobileNav && closeIcon) {
+                        hamburgerIcon.addEventListener('click', () => {
+                            mobileNav.classList.remove('hidden');
+                            hamburgerIcon.classList.add('hidden');
+                            document.body.style.overflow = 'hidden';
+                        });
+
+                        closeIcon.addEventListener('click', () => {
+                            mobileNav.classList.add('hidden');
+                            hamburgerIcon.classList.remove('hidden');
+                            document.body.style.overflow = '';
+                        });
+                    }
+                });
+        });
+    </script>
+
+</body>
+
+
+
+</html>

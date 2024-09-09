@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esha maheshwari</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:wght@300;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @keyframes popUp {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        .hover-pop-up {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-pop-up:hover {
+            animation: popUp 0.3s forwards;
+        }
+
+        /* Hide scrollbar for Chrome, Safari, and Edge */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge, and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="flex min-h-screen overflow-hidden">
+
+        <!-- Navbar -->
+        <div id="navbar" class=""></div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex md:ml-64">
+
+            <!-- left column scrollable text -->
+            <div class="flex-1 overflow-y-auto text-sm mt-4 p-4">
+
+                <!-- <div class="flex items-center"> -->
+                    <p class="text-lg mb-4">SkinMax</p>
+                    <!-- <a href="https://github.com/eshamah02/portfolio" target="_blank" class="">
+                        <img src="static/github.png" alt="Github link" class="ml-4 w-7 h-7 mb-4 hover-pop-up">
+                    </a> -->
+                <!-- </div> -->
+
+                <p class="italic">Code not available due to liability reasons</p>
+                
+                <p class="mt-4">Skinmax is an AI-powered skincare recommendation system. By taking in some basic information and a selfie of the user, it's able to provide personalized skincare guidance and product recommendations in seconds. 
+                    Users are able to track their progress and see exactly how much their skin has improved from the last time they submitted a photo.</p>
+
+                <p class="mt-4">I'm fortunate enough to be currently working with SkinMax and helping them with product design and
+                    implementation. Here are some things I changed about the original design and my thought process behind it.</p>
+
+                <p class="mt-8 font-semibold">1. Home Page/Landing Page
+                    <button class="ml-5 px-1 border-orange-500 rounded border-2 hover:bg-orange-600 hover:text-white focus:outline-none"
+                        onclick="showImage('skinmax_homepage_before')">
+                        before
+                    </button>
+                    <button class="ml-2 px-1 border-emerald-500 rounded border-2 hover:bg-emerald-600 hover:text-white focus:outline-none"
+                        onclick="showImage('skinmax_homepage_after')">
+                        after
+                    </button>
+                </p>
+                <p class="my-4">The original home page wasn't poorly designed, but it wasn't <span class="italic">as</span> appealing to users as it could be.</p>
+                <p class="">- despite mock ups being available that would explain what the app was and how it worked, users had to scroll to see it even in desktop view</p>
+                <p>- 'how it works' section was unnecessary and seemed childish with emojis</p>
+                <p>- no defining features or characteristics that provided brand identity</p>
+                <p>- on desktop, users may have to scroll down to see the 'Try it Free' call-to-action, demotivator</p>
+                <p class="my-4">Instead of rolling with the informational vibe that the original home page had, I wanted to make it more of a landing page to get users to the next step quickly.
+                    These are the changes I made to make that happen.</p>
+                <p>- condensed text areas so user can see the mock ups in desktop view, got rid of the 'how it works' section</p>
+                <p>- call to action to log in or try the application for free is highlighted and eye catching</p>
+                <p>- had<button class="ml-2 px-1 border-emerald-500 rounded border-2 hover:bg-emerald-600 hover:text-white focus:outline-none"
+                    onclick="showImage('skinmax_logo_1', 'skinmax_logo_2', 'skinmax_logo_3', 'skinmax_logo_4')">
+                    fonts
+                </button> and<button class="ml-2 px-1 border-emerald-500 rounded border-2 hover:bg-emerald-600 hover:text-white focus:outline-none"
+                    onclick="showImage('skinmax_logo_5', 'skinmax_logo_6', 'skinmax_logo_7', 'skinmax_logo_8')">
+                    colors
+                </button> that had previously been chosen to provide brand identity, so used that font and pushed orange throughout</p>
+                
+                <p class="mt-8 font-semibold">2. Flow
+                    <button class="ml-2 px-1 border-orange-500 rounded border-2 hover:bg-orange-600 hover:text-white focus:outline-none"
+                        onclick="showImage('skinmax_flow_1_before', 'skinmax_flow_2_before', 'skinmax_flow_3_before', 'skinmax_flow_4_before')">
+                        before
+                    </button>
+                    <button
+                        class="ml-2 px-1 border-emerald-500 rounded border-2 hover:bg-emerald-600 hover:text-white focus:outline-none"
+                        onclick="showImage('skinmax_flow_1_after', 'skinmax_flow_2_after', 'skinmax_flow_3_after', 'skinmax_flow_4_after')">
+                        after
+                    </button>
+                </p>
+                <p class="my-4">The original flow worked but wasn't easy to progress through for the user group that isn't familiar with skincare. Because of the large<button class="ml-2 px-1 border-emerald-500 rounded border-2 hover:bg-emerald-600 hover:text-white focus:outline-none"
+                    onclick="showImage('skinmax_logo_4')">
+                    'S'
+                </button>, users had to scroll
+                    down on mobile for every question if they wanted to get to the text box and submit, slowing down the flow. Here is what I did to mediate this.</p>
+                <p>- got rid of the big orange 'S' to make room, this made it a lot easier to step through the flow (especially on mobile)</p>
+                <p>- made the 'type of skin' a set of options to choose from instead of a text box for users who don't know the different types of skin</p>
+                <p class="my-4">As an aside, I also added an<button class="ml-2 px-1 border-emerald-500 rounded border-2 hover:bg-emerald-600 hover:text-white focus:outline-none"
+                    onclick="showImage('skinmax_flow_4_after')">
+                    extra question
+                </button> for users to input what they were specifically looking to improve so our AI model could give suggestions geared towards those.</p>
+                <p>For my next steps, I'm going to change the skincare routine and improvement questions to also have a set of options to choose from rather than having a text input to speed up the flow.</p>
+
+                <p class="mt-8 font-semibold">3. Responsive Web Design
+                    <button class="ml-2 px-1 border-orange-500 rounded border-2 hover:bg-orange-600 hover:text-white focus:outline-none"
+                        onclick="showImage('skinmax_upload_page_before', 'skinmax_dashboard_page_before', 'skinmax_invite_page_before')">
+                        before
+                    </button>
+                    <button
+                        class="ml-2 px-1 border-emerald-500 rounded border-2 hover:bg-emerald-600 hover:text-white focus:outline-none"
+                        onclick="showImage('skinmax_upload_page_after', 'skinmax_dashboard_page_after', 'skinmax_invite_page_after')">
+                        after
+                    </button>
+                </p>
+
+                <p class="my-4">Designing with a mobile-first design is always a really good idea! But the original pages of SkinMax seemed to be designed with a mobile-only design. Here's what I mean.</p>
+
+                <p>- these screenshots were taken on a desktop, however the page only fills what would be visible on a mobile</p>
+                <p>- there's a navigation bar on all screens that is more associated with mobile apps rather than web applications, which ends up looking kind of odd when you navigate to this website on desktop or mobile</p>
+
+                <p class="my-4">Here's what I did to mediate these issues.</p>
+
+                <p>- made all the pages responsive for all screens (also did a bunch of redesigns for all previously existing pages to make them more user friendly! see if you can spot them!)</p>
+                <p>- added a navigation bar at the top for desktop view</p>
+                <p>- added a<button class="ml-2 px-1 border-emerald-500 rounded border-2 hover:bg-emerald-600 hover:text-white focus:outline-none"
+                    onclick="showImage('skinmax_dashboard_page_after_mobile', 'skinmax_navbar_mobile')">
+                    hamburger navigation
+                </button> bar for mobile view</p>
+
+                <p class="mt-8 font-semibold">4. Profile Page
+                    <button
+                        class="ml-2 px-1 border-emerald-500 rounded border-2 hover:bg-emerald-600 hover:text-white focus:outline-none"
+                        onclick="showImage('skinmax_profile_closed', 'skinmax_profile_open')">
+                        after
+                    </button>
+                </p>
+
+                <p class="my-4">There was initially no profile page on this application. This meant that users didn't have a dedicated place to update their information, log out of their account, and even delete their account.</p>
+                <p>So I made one!</p>
+                <p class="mt-4">For my next steps, I plan to add a profile photo and a spot so users can see how many credits they have.</p>
+
+
+                
+
+
+            </div>
+
+            <!-- right column img section -->
+            <div class="flex-1">
+
+                <div id="imageArea" class="fixed max-h-full overflow-y-auto text-center items-center no-scrollbar">
+                    <img id="skinmax_homepage_before" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10" src="static/skinmax_homepage_before.png" alt="Skinmax homepage before">
+                    <img id="skinmax_homepage_after" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10" src="static/skinmax_homepage_after.png" alt="Skinmax homepage after">
+                    <img id="skinmax_logo_1" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_logo_1.png" alt="Skinmax logo 1">
+                    <img id="skinmax_logo_2" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_logo_2.png" alt="Skinmax logo 2">
+                    <img id="skinmax_logo_3" class="hidden cursor-pointer hover-pop-up w-1/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_logo_3.png" alt="Skinmax logo 3">
+                    <img id="skinmax_logo_4" class="hidden cursor-pointer hover-pop-up w-1/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_logo_4.png" alt="Skinmax logo 4">
+                    <img id="skinmax_logo_5" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_logo_5.png" alt="Skinmax logo 5">
+                    <img id="skinmax_logo_6" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_logo_6.png" alt="Skinmax logo 6">
+                    <img id="skinmax_logo_7" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_logo_7.png" alt="Skinmax logo 7">
+                    <img id="skinmax_logo_8" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_logo_8.png" alt="Skinmax logo 8">
+                    <img id="skinmax_flow_1_before" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_flow_1_before.png" alt="Skinmax flow 1 before">
+                    <img id="skinmax_flow_2_before" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_flow_2_before.png" alt="Skinmax flow 2 before">
+                    <img id="skinmax_flow_3_before" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_flow_3_before.png" alt="Skinmax flow 3 before">
+                    <img id="skinmax_flow_4_before" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_flow_4_before.png" alt="Skinmax flow 4 before">
+                    <img id="skinmax_flow_1_after" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_flow_1_after.png" alt="Skinmax flow 1 after">
+                    <img id="skinmax_flow_2_after" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_flow_2_after.png" alt="Skinmax flow 2 after">
+                    <img id="skinmax_flow_3_after" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_flow_3_after.png" alt="Skinmax flow 3 after">
+                    <img id="skinmax_flow_4_after" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700" src="static/skinmax_flow_4_after.png" alt="Skinmax flow 4 after">
+                    <img id="skinmax_upload_page_before" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_upload_page_before.png" alt="Skinmax upload page before">
+                    <img id="skinmax_dashboard_page_before" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_dashboard_page_before.png" alt="Skinmax dashboard page before">
+                    <img id="skinmax_invite_page_before" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_invite_page_before.png" alt="Skinmax invite page before">
+                    <img id="skinmax_upload_page_after" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_upload_page_after.png" alt="Skinmax upload page after">
+                    <img id="skinmax_dashboard_page_after" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_dashboard_page_after.png" alt="Skinmax dashboard page after">
+                    <img id="skinmax_invite_page_after" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_invite_page_after.png" alt="Skinmax invite page after">
+                    <img id="skinmax_dashboard_page_after_mobile" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_dashboard_page_after_mobile.png" alt="Skinmax dashboard page after mobile">
+                    <img id="skinmax_navbar_mobile" class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_navbar_mobile.png" alt="Skinmax navbar mobile">
+                    <img id="skinmax_profile_closed"
+                        class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_profile_closed.png" alt="Skinmax profile closed">
+                    <img id="skinmax_profile_open"
+                        class="hidden cursor-pointer hover-pop-up w-2/3 h-auto ml-10 p-3 m-2 border-2 rounded border-emerald-700"
+                        src="static/skinmax_profile_open.jpg" alt="Skinmax profile open">
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('navbar').innerHTML = data;
+
+                        // Now that navbar.html is loaded, add the event listeners
+                        const hamburgerIcon = document.getElementById('hamburgerIcon');
+                        const mobileNav = document.getElementById('mobileNav');
+                        const closeIcon = document.getElementById('closeIcon');
+
+                        if (hamburgerIcon && mobileNav && closeIcon) {
+                            hamburgerIcon.addEventListener('click', () => {
+                                mobileNav.classList.remove('hidden');
+                                hamburgerIcon.classList.add('hidden');
+                                document.body.style.overflow = 'hidden';
+                            });
+
+                            closeIcon.addEventListener('click', () => {
+                                mobileNav.classList.add('hidden');
+                                hamburgerIcon.classList.remove('hidden');
+                                document.body.style.overflow = '';
+                            });
+                        }
+                    });
+            });
+
+            function showImage(...imageIds) {
+                // Hide all images
+                document.querySelectorAll('#imageArea img').forEach(img => img.classList.add('hidden'));
+
+                // Show the selected images
+                imageIds.forEach(imageId => {
+                    const img = document.getElementById(imageId);
+                    img.classList.remove('hidden');
+
+                    // Add event listener to open the image in a new tab when clicked
+                    img.addEventListener('click', function () {
+                        window.open(img.src, '_blank');
+                    });
+                });
+            }
+
+        </script>
+
+</body>
+
+
+
+</html>

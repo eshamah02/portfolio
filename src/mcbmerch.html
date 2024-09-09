@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esha maheshwari</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:wght@300;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="sidebar">
+
+            <p class="maintopic"><a href="index.html">ESHA MAHESHWARI</a></p>
+
+            <p class="maintopic">CODING</p>
+            <p class="subtopic"><a href="coloranalysis.html">COLOR ANALYSIS</a></p>
+            <p class="subtopic"><a href="smartdose.html">SMARTDOSE</a></p>
+            <p class="subtopic"><a href="a3.html">A3</a></p>
+            <p class="subtopic"><a href="piazzaclassifier.html">PIAZZA CLASSIFIER</a></p>
+            <p class="subtopic"><a href="chess.html">CHESS</a></p>
+            <p class="subtopic"><a href="pacman.html">PACMAN</a></p>
+            <p class="subtopic"><a href="portfolio.html">PORTFOLIO</a></p>
+
+            <p class="maintopic">DESIGN</p>
+            <p class="subtopic">PORTFOLIO REVAMP</p>
+            <p class="subtopic"><a href="mcbmerch.html">MCB MERCH</a></p>
+            <p class="subtopic">LETTERPRESSING</p>
+
+            <p class="maintopic">RESEARCH</p>
+
+            <p class="maintopic"><a href="about.html">ABOUT</a></p>
+            <p class="maintopic"><a href="mailto:eshamah02@gmail.com?subject=Reaching Out From Portfolio"
+                    target="_blank">CONTACT</a></p>
+            <p class="maintopic"><a href="static/Esha_Maheshwari_Resume.pdf" target="_blank">RESUME</a></p>
+
+
+        </div>
+
+        <div class="main">
+
+            <div class="column cols2-1">
+
+                <p>I designed, organized, and sold merch for Michigan College Boxing as a fundraising effort 
+                    for the team, resulting in just under 1K raised!</p>
+
+                <p>Here's a look into the design process.</p>
+
+                <p>I used Pinterest for hoodie design inspiration, as this was my first time designing merch.</p>
+
+
+
+
+
+
+
+                
+
+
+            </div>
+
+            <div class="column cols2-2">
+
+                <div class="col2-middle-img">
+                    <img id="mcbmerchinspo" src="static/mcbmerchinspo1.jpg">
+                </div>
+                
+                <div class="toprightnote">
+                    <p class="note">click on the paragraphs</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <script>
+            // code below is responsible for changing images every 2500 ms on mcbmerch page for pinterest inspo pictures
+            var mcbmerchinspoimg = document.getElementById("mcbmerchinspo");
+            var mcbmerchinspoimgs = ["static/mcbmerchinspo1.jpg", "static/mcbmerchinspo2.jpg", "static/mcbmerchinspo3.jpg", "static/mcbmerchinspo4.jpg", "static/mcbmerchinspo5.jpg", "static/mcbmerchinspo6.jpg"];
+            var mcbmerchinspoimgidx = 0;
+
+            function updateImage() {
+                mcbmerchinspoimg.src = mcbmerchinspoimgs[mcbmerchinspoimgidx];
+                mcbmerchinspoimgidx = (mcbmerchinspoimgidx + 1) % mcbmerchinspoimgs.length;
+            }
+
+            setInterval(updateImage, 2500);
+        </script>
+
+</body>
+
+
+
+</html>
